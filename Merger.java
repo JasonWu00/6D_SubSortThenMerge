@@ -165,6 +165,10 @@ public class Merger {
         return "" + usersData;
     }
 
+    public ArrayList<String> returnArray() {
+      return usersData; //helper
+    }
+
 
     /**
       @return the boolean value of the statement
