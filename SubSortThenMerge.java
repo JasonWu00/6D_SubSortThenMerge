@@ -41,22 +41,22 @@ public class SubSortThenMerge {
         unsortedBackHalf.add(unsorted.get(index));
       }
       //debug: see if the unsorted halves are properly made
-      System.out.println("Debug: entire ArrayList: " + unsorted
+      /*System.out.println("Debug: entire ArrayList: " + unsorted
                         + System.lineSeparator()
                         + "Unsorted front half: " + unsortedFrontHalf
                         + System.lineSeparator()
                         + "Unsorted back half: " + unsortedBackHalf
-                        + System.lineSeparator());
+                        + System.lineSeparator());*/
       ArrayList<String> sortedFrontHalf = SubSortMergeSorter(unsortedFrontHalf);
       ArrayList<String> sortedBackHalf = SubSortMergeSorter(unsortedBackHalf);
 
       //debug: see if halves are properly sorted
-      System.out.println("Debug: entire ArrayList: " + unsorted
+      /*System.out.println("Debug: entire ArrayList: " + unsorted
                         + System.lineSeparator()
                         + "Sorted front half: " + sortedFrontHalf
                         + System.lineSeparator()
                         + "Sorted back half: " + sortedBackHalf
-                        + System.lineSeparator());
+                        + System.lineSeparator());*/
 
       //leftover or combining here
       ArrayList<String> combinedList = new ArrayList<String> (); //for use with Merger
@@ -70,8 +70,8 @@ public class SubSortThenMerge {
       }
 
       Merger sortedList = new Merger(combinedList);
-      sortedList.merge(0, combinedList.size() / 2, combinedList.size());
-      output = sortedList.returnArray();
+      sortedList.merge(0, combinedList.size() / 2, combinedList.size()); //sorts merged list
+      output = sortedList.returnArray();// Convert to form that can be returned
     }//end recursive case
     return output;
   }

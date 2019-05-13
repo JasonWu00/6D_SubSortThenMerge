@@ -37,7 +37,7 @@ public class Merger {
         for( int iUserData = start0; iUserData < end1; iUserData++)
             localCopy.add( usersData.get( iUserData));
         // temp for debugging
-        System.out.println( "localCopy: " + localCopy);
+        //System.out.println( "localCopy: " + localCopy);
 
         /* Invoke one of the two styles of programming the merge
            Since a real solution would contain only one of these,

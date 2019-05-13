@@ -9,10 +9,10 @@ public class UserOfSubSort {
     System.out.println(baseCase.merge()); //testing base case
 
     list.add("7");
-    list.add("A");
     SubSortThenMerge smallestRecursiveCase = new SubSortThenMerge(list);
     System.out.println(smallestRecursiveCase.merge());
 
+    list.add("A");
     list.add("3");
     list.add("8");
     list.add("5");
